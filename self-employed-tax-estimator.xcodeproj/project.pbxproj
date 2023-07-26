@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		779ABE832A718B0E0025C217 /* self_employed_tax_estimatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */; };
+		779ABE852A718B0E0025C217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE842A718B0E0025C217 /* ContentView.swift */; };
+		779ABE872A718B110025C217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779ABE862A718B110025C217 /* Assets.xcassets */; };
+		779ABE8A2A718B110025C217 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779ABE892A718B110025C217 /* Preview Assets.xcassets */; };
+		779ABE942A718B110025C217 /* self_employed_tax_estimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE932A718B110025C217 /* self_employed_tax_estimatorTests.swift */; };
+		779ABE9E2A718B110025C217 /* self_employed_tax_estimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE9D2A718B110025C217 /* self_employed_tax_estimatorUITests.swift */; };
+		779ABEA02A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		779ABE902A718B110025C217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779ABE772A718B0E0025C217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779ABE7E2A718B0E0025C217;
+			remoteInfo = "self-employed-tax-estimator";
+		};
+		779ABE9A2A718B110025C217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 779ABE772A718B0E0025C217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779ABE7E2A718B0E0025C217;
+			remoteInfo = "self-employed-tax-estimator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		779ABE7F2A718B0E0025C217 /* self-employed-tax-estimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "self-employed-tax-estimator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorApp.swift; sourceTree = "<group>"; };
+		779ABE842A718B0E0025C217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		779ABE862A718B110025C217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		779ABE892A718B110025C217 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		779ABE8F2A718B110025C217 /* self-employed-tax-estimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "self-employed-tax-estimatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779ABE932A718B110025C217 /* self_employed_tax_estimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorTests.swift; sourceTree = "<group>"; };
+		779ABE992A718B110025C217 /* self-employed-tax-estimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "self-employed-tax-estimatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		779ABE9D2A718B110025C217 /* self_employed_tax_estimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorUITests.swift; sourceTree = "<group>"; };
+		779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		779ABE7C2A718B0E0025C217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE8C2A718B110025C217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE962A718B110025C217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779ABE762A718B0E0025C217 = {
+			isa = PBXGroup;
+			children = (
+				779ABE812A718B0E0025C217 /* self-employed-tax-estimator */,
+				779ABE922A718B110025C217 /* self-employed-tax-estimatorTests */,
+				779ABE9C2A718B110025C217 /* self-employed-tax-estimatorUITests */,
+				779ABE802A718B0E0025C217 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		779ABE802A718B0E0025C217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				779ABE7F2A718B0E0025C217 /* self-employed-tax-estimator.app */,
+				779ABE8F2A718B110025C217 /* self-employed-tax-estimatorTests.xctest */,
+				779ABE992A718B110025C217 /* self-employed-tax-estimatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		779ABE812A718B0E0025C217 /* self-employed-tax-estimator */ = {
+			isa = PBXGroup;
+			children = (
+				779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */,
+				779ABE842A718B0E0025C217 /* ContentView.swift */,
+				779ABE862A718B110025C217 /* Assets.xcassets */,
+				779ABE882A718B110025C217 /* Preview Content */,
+			);
+			path = "self-employed-tax-estimator";
+			sourceTree = "<group>";
+		};
+		779ABE882A718B110025C217 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				779ABE892A718B110025C217 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		779ABE922A718B110025C217 /* self-employed-tax-estimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				779ABE932A718B110025C217 /* self_employed_tax_estimatorTests.swift */,
+			);
+			path = "self-employed-tax-estimatorTests";
+			sourceTree = "<group>";
+		};
+		779ABE9C2A718B110025C217 /* self-employed-tax-estimatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				779ABE9D2A718B110025C217 /* self_employed_tax_estimatorUITests.swift */,
+				779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */,
+			);
+			path = "self-employed-tax-estimatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		779ABE7E2A718B0E0025C217 /* self-employed-tax-estimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779ABEA32A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimator" */;
+			buildPhases = (
+				779ABE7B2A718B0E0025C217 /* Sources */,
+				779ABE7C2A718B0E0025C217 /* Frameworks */,
+				779ABE7D2A718B0E0025C217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "self-employed-tax-estimator";
+			productName = "self-employed-tax-estimator";
+			productReference = 779ABE7F2A718B0E0025C217 /* self-employed-tax-estimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		779ABE8E2A718B110025C217 /* self-employed-tax-estimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779ABEA62A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimatorTests" */;
+			buildPhases = (
+				779ABE8B2A718B110025C217 /* Sources */,
+				779ABE8C2A718B110025C217 /* Frameworks */,
+				779ABE8D2A718B110025C217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779ABE912A718B110025C217 /* PBXTargetDependency */,
+			);
+			name = "self-employed-tax-estimatorTests";
+			productName = "self-employed-tax-estimatorTests";
+			productReference = 779ABE8F2A718B110025C217 /* self-employed-tax-estimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		779ABE982A718B110025C217 /* self-employed-tax-estimatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 779ABEA92A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimatorUITests" */;
+			buildPhases = (
+				779ABE952A718B110025C217 /* Sources */,
+				779ABE962A718B110025C217 /* Frameworks */,
+				779ABE972A718B110025C217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				779ABE9B2A718B110025C217 /* PBXTargetDependency */,
+			);
+			name = "self-employed-tax-estimatorUITests";
+			productName = "self-employed-tax-estimatorUITests";
+			productReference = 779ABE992A718B110025C217 /* self-employed-tax-estimatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		779ABE772A718B0E0025C217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					779ABE7E2A718B0E0025C217 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					779ABE8E2A718B110025C217 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 779ABE7E2A718B0E0025C217;
+					};
+					779ABE982A718B110025C217 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 779ABE7E2A718B0E0025C217;
+					};
+				};
+			};
+			buildConfigurationList = 779ABE7A2A718B0E0025C217 /* Build configuration list for PBXProject "self-employed-tax-estimator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 779ABE762A718B0E0025C217;
+			productRefGroup = 779ABE802A718B0E0025C217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				779ABE7E2A718B0E0025C217 /* self-employed-tax-estimator */,
+				779ABE8E2A718B110025C217 /* self-employed-tax-estimatorTests */,
+				779ABE982A718B110025C217 /* self-employed-tax-estimatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		779ABE7D2A718B0E0025C217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779ABE8A2A718B110025C217 /* Preview Assets.xcassets in Resources */,
+				779ABE872A718B110025C217 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE8D2A718B110025C217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE972A718B110025C217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		779ABE7B2A718B0E0025C217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779ABE852A718B0E0025C217 /* ContentView.swift in Sources */,
+				779ABE832A718B0E0025C217 /* self_employed_tax_estimatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE8B2A718B110025C217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779ABE942A718B110025C217 /* self_employed_tax_estimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779ABE952A718B110025C217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779ABEA02A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift in Sources */,
+				779ABE9E2A718B110025C217 /* self_employed_tax_estimatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		779ABE912A718B110025C217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779ABE7E2A718B0E0025C217 /* self-employed-tax-estimator */;
+			targetProxy = 779ABE902A718B110025C217 /* PBXContainerItemProxy */;
+		};
+		779ABE9B2A718B110025C217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779ABE7E2A718B0E0025C217 /* self-employed-tax-estimator */;
+			targetProxy = 779ABE9A2A718B110025C217 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		779ABEA12A718B110025C217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		779ABEA22A718B110025C217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		779ABEA42A718B110025C217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"self-employed-tax-estimator/Preview Content\"";
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		779ABEA52A718B110025C217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"self-employed-tax-estimator/Preview Content\"";
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		779ABEA72A718B110025C217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/self-employed-tax-estimator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/self-employed-tax-estimator";
+			};
+			name = Debug;
+		};
+		779ABEA82A718B110025C217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/self-employed-tax-estimator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/self-employed-tax-estimator";
+			};
+			name = Release;
+		};
+		779ABEAA2A718B110025C217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "self-employed-tax-estimator";
+			};
+			name = Debug;
+		};
+		779ABEAB2A718B110025C217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9364P9AF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rollinsio.self-employed-tax-estimatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "self-employed-tax-estimator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		779ABE7A2A718B0E0025C217 /* Build configuration list for PBXProject "self-employed-tax-estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779ABEA12A718B110025C217 /* Debug */,
+				779ABEA22A718B110025C217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779ABEA32A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779ABEA42A718B110025C217 /* Debug */,
+				779ABEA52A718B110025C217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779ABEA62A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779ABEA72A718B110025C217 /* Debug */,
+				779ABEA82A718B110025C217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779ABEA92A718B110025C217 /* Build configuration list for PBXNativeTarget "self-employed-tax-estimatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				779ABEAA2A718B110025C217 /* Debug */,
+				779ABEAB2A718B110025C217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 779ABE772A718B0E0025C217 /* Project object */;
+}
