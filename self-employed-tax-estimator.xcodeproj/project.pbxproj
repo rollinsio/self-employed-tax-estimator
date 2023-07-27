@@ -14,6 +14,11 @@
 		779ABE942A718B110025C217 /* self_employed_tax_estimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE932A718B110025C217 /* self_employed_tax_estimatorTests.swift */; };
 		779ABE9E2A718B110025C217 /* self_employed_tax_estimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE9D2A718B110025C217 /* self_employed_tax_estimatorUITests.swift */; };
 		779ABEA02A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */; };
+		779ABEAD2A718B430025C217 /* EstimatorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEAC2A718B430025C217 /* EstimatorMainView.swift */; };
+		779ABEAF2A718B530025C217 /* EstimatorMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEAE2A718B530025C217 /* EstimatorMainViewModel.swift */; };
+		779ABEB22A718C210025C217 /* FederalTaxTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB12A718C210025C217 /* FederalTaxTable.swift */; };
+		779ABEB52A718C660025C217 /* TaxBracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB42A718C660025C217 /* TaxBracket.swift */; };
+		779ABEB72A719C0C0025C217 /* StateTaxTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB62A719C0C0025C217 /* StateTaxTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		779ABE992A718B110025C217 /* self-employed-tax-estimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "self-employed-tax-estimatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		779ABE9D2A718B110025C217 /* self_employed_tax_estimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorUITests.swift; sourceTree = "<group>"; };
 		779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		779ABEAC2A718B430025C217 /* EstimatorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatorMainView.swift; sourceTree = "<group>"; };
+		779ABEAE2A718B530025C217 /* EstimatorMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimatorMainViewModel.swift; sourceTree = "<group>"; };
+		779ABEB12A718C210025C217 /* FederalTaxTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalTaxTable.swift; sourceTree = "<group>"; };
+		779ABEB42A718C660025C217 /* TaxBracket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxBracket.swift; sourceTree = "<group>"; };
+		779ABEB62A719C0C0025C217 /* StateTaxTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTaxTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +104,13 @@
 		779ABE812A718B0E0025C217 /* self-employed-tax-estimator */ = {
 			isa = PBXGroup;
 			children = (
+				779ABEB02A718C080025C217 /* TaxTables */,
 				779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */,
 				779ABE842A718B0E0025C217 /* ContentView.swift */,
 				779ABE862A718B110025C217 /* Assets.xcassets */,
 				779ABE882A718B110025C217 /* Preview Content */,
+				779ABEAC2A718B430025C217 /* EstimatorMainView.swift */,
+				779ABEAE2A718B530025C217 /* EstimatorMainViewModel.swift */,
 			);
 			path = "self-employed-tax-estimator";
 			sourceTree = "<group>";
@@ -125,6 +138,16 @@
 				779ABE9F2A718B110025C217 /* self_employed_tax_estimatorUITestsLaunchTests.swift */,
 			);
 			path = "self-employed-tax-estimatorUITests";
+			sourceTree = "<group>";
+		};
+		779ABEB02A718C080025C217 /* TaxTables */ = {
+			isa = PBXGroup;
+			children = (
+				779ABEB12A718C210025C217 /* FederalTaxTable.swift */,
+				779ABEB42A718C660025C217 /* TaxBracket.swift */,
+				779ABEB62A719C0C0025C217 /* StateTaxTable.swift */,
+			);
+			path = TaxTables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779ABEB52A718C660025C217 /* TaxBracket.swift in Sources */,
+				779ABEAF2A718B530025C217 /* EstimatorMainViewModel.swift in Sources */,
+				779ABEB72A719C0C0025C217 /* StateTaxTable.swift in Sources */,
+				779ABEB22A718C210025C217 /* FederalTaxTable.swift in Sources */,
 				779ABE852A718B0E0025C217 /* ContentView.swift in Sources */,
+				779ABEAD2A718B430025C217 /* EstimatorMainView.swift in Sources */,
 				779ABE832A718B0E0025C217 /* self_employed_tax_estimatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,9 @@ import SwiftUI
 struct self_employed_tax_estimatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            EstimatorMainView(viewModel: EstimatorMainViewModel())
+        
         }
     }
 }
