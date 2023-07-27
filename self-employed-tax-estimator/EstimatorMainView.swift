@@ -20,6 +20,7 @@ struct EstimatorMainView: View {
     @FocusState var additionalExpensesFocused: Bool
     
     @State var showTaxBurdenInfoSheet: Bool = false
+    @State var showConfigSheet: Bool = false
     
     var body: some View {
         VStack {
@@ -85,11 +86,6 @@ struct EstimatorMainView: View {
                     .keyboardType(.decimalPad)
                     .padding(.horizontal)
                 
-                Picker("State", selection: $viewModel.state) {
-                    ForEach(StateTaxTable.taxTable.keys.sorted(), id: \.self) { key in
-                        Text(key)
-                    }
-                }
                 HStack {
                     Button("Reset") {
                         viewModel.reset()
@@ -103,10 +99,18 @@ struct EstimatorMainView: View {
                         additionalExpensesFocused = false
                     }
                 }
+                Button("Config") {
+                    showConfigSheet = true
+                }
+                .font(.caption)
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
             .padding()
             .background(.ultraThinMaterial)
             .cornerRadius(10)
+            .sheet(isPresented: $showConfigSheet) {
+                ConfigView(viewModel: viewModel)
+            }
             
             Spacer()
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		775E363E2A73148C0092C8CD /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E363D2A73148C0092C8CD /* ConfigView.swift */; };
 		779ABE832A718B0E0025C217 /* self_employed_tax_estimatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */; };
 		779ABE852A718B0E0025C217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABE842A718B0E0025C217 /* ContentView.swift */; };
 		779ABE872A718B110025C217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 779ABE862A718B110025C217 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		775E363D2A73148C0092C8CD /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		779ABE7F2A718B0E0025C217 /* self-employed-tax-estimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "self-employed-tax-estimator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		779ABE822A718B0E0025C217 /* self_employed_tax_estimatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = self_employed_tax_estimatorApp.swift; sourceTree = "<group>"; };
 		779ABE842A718B0E0025C217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				779ABEAC2A718B430025C217 /* EstimatorMainView.swift */,
 				779ABEAE2A718B530025C217 /* EstimatorMainViewModel.swift */,
 				779ABEB82A72CB010025C217 /* TaxBurdenInfoView.swift */,
+				775E363D2A73148C0092C8CD /* ConfigView.swift */,
 			);
 			path = "self-employed-tax-estimator";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				779ABEB52A718C660025C217 /* TaxBracket.swift in Sources */,
 				779ABEAF2A718B530025C217 /* EstimatorMainViewModel.swift in Sources */,
 				779ABEB72A719C0C0025C217 /* StateTaxTable.swift in Sources */,
+				775E363E2A73148C0092C8CD /* ConfigView.swift in Sources */,
 				779ABEB22A718C210025C217 /* FederalTaxTable.swift in Sources */,
 				779ABE852A718B0E0025C217 /* ContentView.swift in Sources */,
 				779ABEAD2A718B430025C217 /* EstimatorMainView.swift in Sources */,

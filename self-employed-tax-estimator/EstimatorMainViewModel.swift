@@ -8,30 +8,34 @@
 import Foundation
 
 class EstimatorMainViewModel: ObservableObject {
+    // Money values
     @Published var grossIncome: Double = 0.0
     @Published var totalTaxBurden: Double = 0.0
     @Published var federalTaxBurden: Double = 0.0
     @Published var ficaTaxBurden: Double = 0.0
     @Published var stateTaxBurden: Double = 0.0
-    @Published var state: String = "VA"
     @Published var additionalExpenses: Double = 0.0
     @Published var totalTakeHome: Double = 0.0
     
-    
-    
     let FICA = 0.153
     
+    // Config values
+    @Published var state: String = "VA"
+    @Published var joint: Bool = false
+    @Published var selfEmployed: Bool = true 
+    
     func calculateTotalTakeHome() {
-        calculateTotalTaxBurden(joint: true)
+        calculateTotalTaxBurden(joint: joint)
         totalTakeHome = grossIncome - totalTaxBurden - additionalExpenses
     }
-    
-    
     
     func calculateTotalTaxBurden(joint: Bool) {
         reset()
         totalTaxBurden += calculateFederalTaxBurden(joint: joint)
-        ficaTaxBurden = FICA * grossIncome
+        if selfEmployed {
+            ficaTaxBurden = FICA * grossIncome
+        }
+        
         totalTaxBurden += ficaTaxBurden
         totalTaxBurden += calculateStateTaxBurden(joint: joint, state: state)
     }
