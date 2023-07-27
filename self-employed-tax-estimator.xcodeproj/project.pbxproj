@@ -19,6 +19,7 @@
 		779ABEB22A718C210025C217 /* FederalTaxTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB12A718C210025C217 /* FederalTaxTable.swift */; };
 		779ABEB52A718C660025C217 /* TaxBracket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB42A718C660025C217 /* TaxBracket.swift */; };
 		779ABEB72A719C0C0025C217 /* StateTaxTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB62A719C0C0025C217 /* StateTaxTable.swift */; };
+		779ABEB92A72CB010025C217 /* TaxBurdenInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779ABEB82A72CB010025C217 /* TaxBurdenInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		779ABEB12A718C210025C217 /* FederalTaxTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalTaxTable.swift; sourceTree = "<group>"; };
 		779ABEB42A718C660025C217 /* TaxBracket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxBracket.swift; sourceTree = "<group>"; };
 		779ABEB62A719C0C0025C217 /* StateTaxTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTaxTable.swift; sourceTree = "<group>"; };
+		779ABEB82A72CB010025C217 /* TaxBurdenInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxBurdenInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				779ABE882A718B110025C217 /* Preview Content */,
 				779ABEAC2A718B430025C217 /* EstimatorMainView.swift */,
 				779ABEAE2A718B530025C217 /* EstimatorMainViewModel.swift */,
+				779ABEB82A72CB010025C217 /* TaxBurdenInfoView.swift */,
 			);
 			path = "self-employed-tax-estimator";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				779ABEB22A718C210025C217 /* FederalTaxTable.swift in Sources */,
 				779ABE852A718B0E0025C217 /* ContentView.swift in Sources */,
 				779ABEAD2A718B430025C217 /* EstimatorMainView.swift in Sources */,
+				779ABEB92A72CB010025C217 /* TaxBurdenInfoView.swift in Sources */,
 				779ABE832A718B0E0025C217 /* self_employed_tax_estimatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

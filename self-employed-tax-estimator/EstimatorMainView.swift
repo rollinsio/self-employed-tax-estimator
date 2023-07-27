@@ -16,72 +16,56 @@ struct EstimatorMainView: View {
         return nf
     }()
     
+    @FocusState var grossIncomeFocused: Bool
+    @FocusState var additionalExpensesFocused: Bool
+    
+    @State var showTaxBurdenInfoSheet: Bool = false
+    
     var body: some View {
         VStack {
             Spacer()
-            
-            
             VStack {
-                Text("Tax Burden")
+                Text("Total Tax Burden")
                     .font(.title)
-                    .padding(.bottom)
-                
-                HStack {
-                    Text("Federal Tax Burden:")
-                        .frame(width: 200, alignment: .leading)
-                    Text("\(viewModel.federalTaxBurden, specifier: "%.0f")")
-                        .foregroundColor(.red)
+                Text("\(viewModel.totalTaxBurden, specifier: "%.0f")")
+                    .foregroundColor(.red)
+                    .font(.title)
+                Button("Details") {
+                    showTaxBurdenInfoSheet = true
                 }
-                HStack {
-                    Text("State Tax Burden:")
-                        .frame(width: 200, alignment: .leading)
-                    Text("\(viewModel.stateTaxBurden, specifier: "%.0f")")
-                        .foregroundColor(.red)
-                }
-                HStack {
-                    Text("FICA Tax Burden:")
-                        .frame(width: 200, alignment: .leading)
-                    Text("\(viewModel.ficaTaxBurden, specifier: "%.0f")")
-                        .foregroundColor(.red)
-                }
-                HStack {
-                    Text("Total Tax Burden:")
-                        .frame(width: 200, alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                    
-                    Text("\(viewModel.totalTaxBurden, specifier: "%.0f")")
-                        .foregroundColor(.red)
-                }
-                .padding(.bottom)
+                .font(.caption)
+                .frame(maxWidth: .infinity, alignment: .trailing)
             }
-            .frame(minWidth: 300, idealWidth: 500, alignment: .center)
+            .frame(maxWidth: .infinity)
             .padding()
             .background(.ultraThinMaterial)
             .cornerRadius(10)
-            
-            
-            
-            HStack {
-                Text("Take Home:")
-                    .frame(width: 200, alignment: .leading)
-                Text("\(viewModel.totalTakeHome, specifier: "%.0f")")
-                    .foregroundColor(.green)
-                    .frame(alignment: .trailing)
-                
-                
+            .sheet(isPresented: $showTaxBurdenInfoSheet) {
+                TaxBurdenInfoView(viewModel: viewModel)
             }
-            .frame(minWidth: 300, idealWidth: 500, alignment: .center)
+            
+            VStack {
+                Text("Take Home:")
+                    .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                Text("\(viewModel.totalTakeHome, specifier: "%.0f")")
+                    .font(.title)
+                    .foregroundColor(.green)
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
+            .frame(maxWidth: .infinity)
             .padding()
             .background(.ultraThinMaterial)
             .cornerRadius(10)
             
             VStack {
                 Text("Rates")
+                    .font(.title)
                 Text("40 hrs/wk: \(viewModel.totalTakeHome/12/4/40, specifier: "%.0f")")
                 Text("30 hrs/wk: \(viewModel.totalTakeHome/12/4/30, specifier: "%.0f")")
                 Text("20 hrs/wk: \(viewModel.totalTakeHome/12/4/20, specifier: "%.0f")")
             }
-            .frame(minWidth: 300, idealWidth: 500, alignment: .center)
+            .frame(maxWidth: .infinity)
             .padding()
             .background(.ultraThinMaterial)
             .cornerRadius(10)
@@ -89,15 +73,15 @@ struct EstimatorMainView: View {
             VStack {
                 Text("Gross Income")
                 TextField("Gross Income", value: $viewModel.grossIncome, formatter: numberFormatter)
+                    .focused($grossIncomeFocused)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(width: 200)
                     .keyboardType(.decimalPad)
                     .padding(.horizontal)
                 
                 Text("Additional Expenses")
                 TextField("Additional Expenses", value: $viewModel.additionalExpenses, formatter: numberFormatter)
+                    .focused($additionalExpensesFocused)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(width: 200)
                     .keyboardType(.decimalPad)
                     .padding(.horizontal)
                 
@@ -112,15 +96,14 @@ struct EstimatorMainView: View {
                         viewModel.additionalExpenses = 0
                         viewModel.grossIncome = 0
                     }
-                    .frame(width: 100)
                     
                     Button("Calculate") {
                         viewModel.calculateTotalTakeHome()
+                        grossIncomeFocused = false
+                        additionalExpensesFocused = false
                     }
-                    .frame(width: 100)
                 }
             }
-            .frame(minWidth: 300, idealWidth: 500, alignment: .center)
             .padding()
             .background(.ultraThinMaterial)
             .cornerRadius(10)
