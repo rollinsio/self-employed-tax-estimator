@@ -71,17 +71,18 @@ class EstimatorMainViewModel: ObservableObject {
     
     func calculateBracket(bracket: [TaxBracket]) -> Double {
         var burden = 0.0
+        let gross = grossIncome
         
         for i in 0..<bracket.count {
             let min = bracket[i].min
             let max = bracket[i].max
             let rate = bracket[i].rate
             
-            if grossIncome > min {
-                if grossIncome > max {
+            if gross > min {
+                if gross > max {
                     burden += (max - min) * rate
                 } else {
-                    burden += (grossIncome - min) * rate
+                    burden += (gross - min) * rate
                 }
             }
         }

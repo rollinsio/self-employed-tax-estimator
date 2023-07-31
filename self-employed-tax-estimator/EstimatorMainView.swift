@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct EstimatorMainView: View {
+    enum Field: Hashable {
+        case grossIncome, extraExpenses
+    }
+    
     @ObservedObject var viewModel: EstimatorMainViewModel
     
     @State private var numberFormatter: NumberFormatter = {
@@ -16,8 +20,7 @@ struct EstimatorMainView: View {
         return nf
     }()
     
-    @FocusState var grossIncomeFocused: Bool
-    @FocusState var additionalExpensesFocused: Bool
+    @FocusState private var focusedField: Field?
     
     @State var showTaxBurdenInfoSheet: Bool = false
     @State var showConfigSheet: Bool = false
@@ -62,9 +65,9 @@ struct EstimatorMainView: View {
             VStack {
                 Text("Rates")
                     .font(.title)
-                Text("40 hrs/wk: \(viewModel.totalTakeHome/12/4/40, specifier: "%.0f")")
-                Text("30 hrs/wk: \(viewModel.totalTakeHome/12/4/30, specifier: "%.0f")")
-                Text("20 hrs/wk: \(viewModel.totalTakeHome/12/4/20, specifier: "%.0f")")
+                Text("40 hrs/wk: \(viewModel.grossIncome/50/40, specifier: "%.0f")")
+                Text("30 hrs/wk: \(viewModel.grossIncome/50/30, specifier: "%.0f")")
+                Text("20 hrs/wk: \(viewModel.grossIncome/50/20, specifier: "%.0f")")
             }
             .frame(maxWidth: .infinity)
             .padding()
@@ -74,14 +77,14 @@ struct EstimatorMainView: View {
             VStack {
                 Text("Gross Income")
                 TextField("Gross Income", value: $viewModel.grossIncome, formatter: numberFormatter)
-                    .focused($grossIncomeFocused)
+                    .focused($focusedField, equals: .grossIncome)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.decimalPad)
                     .padding(.horizontal)
                 
                 Text("Additional Expenses")
                 TextField("Additional Expenses", value: $viewModel.additionalExpenses, formatter: numberFormatter)
-                    .focused($additionalExpensesFocused)
+                    .focused($focusedField, equals: .extraExpenses)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.decimalPad)
                     .padding(.horizontal)
@@ -95,8 +98,7 @@ struct EstimatorMainView: View {
                     
                     Button("Calculate") {
                         viewModel.calculateTotalTakeHome()
-                        grossIncomeFocused = false
-                        additionalExpensesFocused = false
+                        focusedField = nil
                     }
                 }
                 Button("Config") {
@@ -113,6 +115,9 @@ struct EstimatorMainView: View {
             }
             
             Spacer()
+        }
+        .onTapGesture {
+            focusedField = nil
         }
     }
 }
